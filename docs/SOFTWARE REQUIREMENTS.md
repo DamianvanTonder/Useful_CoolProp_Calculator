@@ -1,27 +1,27 @@
-# Requirements
+# _Requirements_
 
-## System Requirements
-### Operating System
+## _System Requirements_
+### _Operating System_
 - Windows 7 or later
 - macOS 10.12 or later
 - Linux (any modern distribution)
 
-### Python Version
+### _Python Version_
 - Python 3.7 or higher (recommended: Python 3.9+)
 
-## Dependencies
-### Required Python Packages
+## _Dependencies_
+### _Required Python Packages_
 Install all dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Core Dependencies
+#### _Core Dependencies_
 - CoolProp (>=6.4.1)
   - Thermophysical property library
   - Installation: `pip install CoolProp`
 
-#### Standard Library Modules
+#### _Standard Library Modules_
 The following are included with Python (no installation needed):
 - `json` - For exporting calculation history
 - `csv` - For CSV export functionality
@@ -29,15 +29,15 @@ The following are included with Python (no installation needed):
 - `typing` - For type hints
 - `sys` - For command-line arguments
 
-## Installation Instructions
-### Step 1: Install Python
+## _Installation Instructions_
+### _Step 1: Install Python_
 Download and install Python from [python.org](https://www.python.org/downloads/)
 Verify installation:
 ```bash
 python --version
 ```
 
-### Step 2: Create Virtual Environment (Recommended)
+### _Step 2: Create Virtual Environment (Recommended)_
 ```bash
 # Create virtual environment
 python -m venv venv
@@ -49,19 +49,19 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Step 3: Install Dependencies
+### _Step 3: Install Dependencies_
 ```bash
 pip install --upgrade pip
 pip install CoolProp
 ```
 
-## requirements.txt File
+## _requirements.txt File_
 ```
 CoolProp>=6.4.1
 ```
 
-## Troubleshooting
-### CoolProp Installation Issues
+## _Troubleshooting_
+### _CoolProp Installation Issues_
 Windows:
 ```bash
 pip install --upgrade pip setuptools wheel
@@ -79,13 +79,13 @@ macOS (M1/M2 chips):
 arch -arm64 pip install CoolProp
 ```
 
-### Import Errors
+### _Import Errors_
 If you encounter `ModuleNotFoundError: No module named 'CoolProp'`:
 1. Ensure you're in the correct virtual environment
 2. Reinstall CoolProp: `pip install --force-reinstall CoolProp`
 3. Check Python version: `python --version` (must be 3.7+)
 
-## Optional Dependencies
+## _Optional Dependencies_
 For enhanced functionality, you may want to install:
 - numpy - For numerical array operations (if extending the calculator)
 - matplotlib - For plotting property diagrams (future feature)
@@ -95,12 +95,12 @@ For enhanced functionality, you may want to install:
 pip install numpy matplotlib pandas
 ```
 
-## Hardware Requirements
+## _Hardware Requirements_
 - RAM: Minimum 512 MB (1 GB recommended)
 - Disk Space: Approximately 50 MB for installation
 - Processor: Any modern CPU (no special requirements)
 
-## Verification
+## _Verification_
 Test your installation:
 ```bash
 python -c "import CoolProp; print(CoolProp.__version__)"
